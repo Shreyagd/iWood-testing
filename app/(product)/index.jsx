@@ -9,6 +9,7 @@ import Entypo from '@expo/vector-icons/Entypo';
 
 
 
+
 const SearchPage = () => {
 
   const navigation = useNavigation();
@@ -172,10 +173,129 @@ const SearchPage = () => {
               <Text style={styles.shopNowText}>Shop Now -</Text>
             </TouchableOpacity>
           </View>
+          </ImageBackground>
           <Image source={require('../assets/images/product-local/girl.png')} style={styles.girlImage} />
-        </ImageBackground>
+        
+          <View style={styles.reactRow}>
+        <Image source={require('../assets/images/product-local/rect1.png')} style={styles.reelimage}/>
+        <Image source={require('../assets/images/product-local/rect2.png')} style={styles.reelimage}/>
+        <Image source={require('../assets/images/product-local/rect3.png')} style={styles.reelimage}/>
+        </View>
+
+        <View style={styles.brandsSection}>
+          <Text style={styles.brandsTitle}>Brands Of The weeks</Text>
+          <View style={styles.brandsRow}>
+          <Image source={require('../assets/images/product-local/brands1.png')} style={styles.reelimage}/>
+          <Image source={require('../assets/images/product-local/brands2.png')} style={styles.reelimage}/>
+          </View>
+          </View>
+          <View style={styles.bigDealsSection}>
+          <Image source={require('../assets/images/product-local/sale3.png')}/>
+            </View>
+
+
+            <Text style={styles.recentReelsTitle}>Deel Ends in <Text style={styles.sale}> 13h : 57m : 46s</Text> </Text>
+
+            <View style={styles.reactRow}>
+        <Image source={require('../assets/images/product-local/bname1.png')} style={styles.bnameImage}/>
+        <Image source={require('../assets/images/product-local/bname2.png')} style={styles.bnameImage}/>
+        <Image source={require('../assets/images/product-local/bname3.png')} style={styles.bnameImage}/>
+        </View>
+
+        
+        
+        <Text style={styles.recentReelsTitle}>  Most Loved Brands</Text>
+        <View style={styles.reactRow}>
+        <Image source={require('../assets/images/product-local/shoes.png')} style={styles.bnameImage}/>
+        <Image source={require('../assets/images/product-local/beg.png')} style={styles.bnameImage}/>
+       
+        </View>
+      
+      <Text style={styles.recentReelsTitle}>  Budget Buys</Text>
+        <View style={styles.reactRow}>
+        <Image source={require('../assets/images/product-local/budget1.png')} style={styles.bnameImage}/>
+        <Image source={require('../assets/images/product-local/budget2.png')} style={styles.bnameImage}/>
+        <Image source={require('../assets/images/product-local/budget3.png')} style={styles.bnameImage}/>
+        </View>
+      
+      
+        </View>
+
+        
+        
+        <View style={styles.bigDealsSection}>
+          <Image source={require('../assets/images/product-local/sale4.png')}/>
+            </View>
+            <View style={styles.recentReelsSection}>
+            <View style={styles.recentReelsHeader}>
+            <Text style={styles.recentReelsTitle}> Top 10 influencer Reels</Text>
+            <Text style={styles.recentReelsTitle}>
+          <AntDesign name="caretright" color={Colors.white} />
+            Watch more 
+          </Text>
+          
+          </View>
+          <View style={styles.reactRow}>
+        <Image source={require('../assets/images/product-local/inf1.png')} style={styles.bnameImage}/>
+        <Image source={require('../assets/images/product-local/inf2.png')} style={styles.bnameImage}/>
+        <Image source={require('../assets/images/product-local/inf3.png')} style={styles.bnameImage}/>
+        </View>
+
+
+        <Text style={styles.recentReelsTitle}>  You Might also like</Text>
+        <View style={styles.reactRow}>
+        <Image source={require('../assets/images/product-local/handbag1.png')} style={styles.bagImage}/>
+        <Image source={require('../assets/images/product-local/handbag2.png')} style={styles.bagImage}/>
+        <Image source={require('../assets/images/product-local/handbag3.png')} style={styles.bagImage}/>
+        </View>
+
+
+        <View style={styles.recentReelsSection}>
+        <View style={styles.recentReelsHeader}>
+          <Text style={styles.recentReelsTitle}>Continue Browsing These Styles</Text>
+          <Text style={styles.recentReelsTitle}>
+          <AntDesign name="caretright" color={Colors.white} />
+            Watch more 
+          </Text>
+          
+        </View>
+        <View style={styles.reactRow}>
+        <Image source={require('../assets/images/product-local/reel1.png')} style={styles.bnameImage}/>
+        <Image source={require('../assets/images/product-local/reel2.png')} style={styles.bnameImage}/>
+        <Image source={require('../assets/images/product-local/reel3.png')} style={styles.bnameImage}/>
+        </View>
+          </View>       
+         
+
+         
+          </View>
+          <View style={styles.bigDealsSection}>
+        <ImageBackground source={require('../assets/images/product-local/bg.png')} style={styles.rectangleHotImages}>
+          <Image source={require('../assets/images/product-local/ellipse1.png')} style={styles.ellipse1Image} />
+          <View style={styles.bigDealsContent}>
+            <Text style={styles.bigDealsText}>Hottest</Text>
+            <Text style={styles.bigDealsText}>Trends</Text>
+            <TouchableOpacity style={styles.shopNowButton}>
+              <Text style={styles.shopNowText}>Shop Now  <FontAwesome name="long-arrow-right" size={20} color="white" /></Text>
+            </TouchableOpacity>
+          </View>
+          </ImageBackground>
+          <Image source={require('../assets/images/product-local/hotTrend.png')} style={styles.girlImages} />
+
+          <View style={styles.reactRow}>
+        <Image source={require('../assets/images/product-local/dress.png')} style={styles.reelimage}/>
+        <Image source={require('../assets/images/product-local/shorts1.png')} style={styles.reelimage}/>
+        <Image source={require('../assets/images/product-local/shorts2.png')} style={styles.reelimage}/>
+        </View>
+          </View>
+          
+
+          
+         
+
+    
       </View>
-      </View>
+      
     </ScrollView>
   );
 };
@@ -194,6 +314,20 @@ const styles = StyleSheet.create({
     // borderColor: Colors.grey,
     borderRadius: 8,
   },
+  sale:{
+      color:Colors.blue,
+  },
+  bnameImage:{
+    marginTop:15,
+    marginHorizontal:5,
+    marginBottom:10,
+  },
+  bagImage:{
+    marginTop:15,
+    marginHorizontal:5,
+    marginBottom:30,
+    
+  },
   searchInput: {
     flex: 1,
     marginLeft: 10,
@@ -202,6 +336,8 @@ const styles = StyleSheet.create({
   micIcon: {
     marginLeft: 10,
   },
+  
+  
   image: {
     flex: 1,
     resizeMode: 'cover',
@@ -235,6 +371,9 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     color:'red',
    
+  },
+  reelimage: {
+    marginHorizontal: 5, // Add horizontal margin to each image
   },
   categoryImage: {
     width: 85,
@@ -316,11 +455,34 @@ const styles = StyleSheet.create({
   },
   recentReelsTitle: {
     color:Colors.white 
+    
+  },
+  ellipse1Image:{
+  position:'absolute',
+  top:0,
+  width:200,
+ margin:0,  
+
+
+  },
+  girl1Image:{
+    position:'absolute',
+    right: 0,
+    top: 25,
+    width: 180,
+    height: 185,
+    marginTop:0,
+
   },
   reelsRow: {
     flexDirection: 'row',
     justifyContent: 'space-between',
     marginTop: 10,
+  },
+  reactRow:{
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    marginTop: 0,
   },
   reelImage: {
     // width: 100,
@@ -333,11 +495,20 @@ const styles = StyleSheet.create({
   },
   rectangleHotImage: {
     width: '100%',
-    height: 170,
+    height: 150,
     position: 'relative',
     resizeMode: 'cover',
     justifyContent: 'center',
     marginTop:50,
+  },
+  rectangleHotImages:{
+    width: '100%',
+    height: 150,
+    position: 'relative',
+    resizeMode: 'cover',
+    justifyContent: 'center',
+    marginTop:20,
+
   },
   ellipseImage: {
     position: 'absolute',
@@ -359,19 +530,34 @@ const styles = StyleSheet.create({
   shopNowButton: {
     backgroundColor: '#007bff',
     padding: 10,
-    borderRadius: 5,
+    borderRadius: 10,
     marginTop: 10,
+    width:125,
+    
+    
   },
   shopNowText: {
     color: '#fff',
   },
   girlImage: {
-    position: 'absolute',
-    right: 1,
-    top: 1,
-    width: 150,
-    height: 150,
-    marginBottom:5,
+    position:'absolute',
+    right: 0,
+    top: 25,
+    width: 180,
+    height: 185,
+    marginTop:0,
+   
+    
+  },
+  girlImages:{
+    position:'absolute',
+    right: 25,
+    top: 0,
+    
+    width: 180,
+    height: 185,
+    marginTop:0,
+
   },
   skincareSection: {
     padding: 10,
@@ -398,7 +584,9 @@ const styles = StyleSheet.create({
   },
   brandsTitle: {
     fontSize: 18,
-    fontWeight: 'bold',
+    
+    color:Colors.white,
+    textAlign: 'center',
   },
   brandsRow: {
     flexDirection: 'row',
@@ -408,6 +596,7 @@ const styles = StyleSheet.create({
   brandsImage: {
     width: '48%',
     height: 100,
+   
   },
 
 });
